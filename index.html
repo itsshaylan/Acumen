@@ -37,7 +37,7 @@
           <li class="hero-nav__item">
             <img class="hero-nav__logo" src="./media/logo.svg" alt="our logo">
           </li>
-          <li id="hero-menu" class="flex-grow-1 hero__nav-list hero__nav-list--mobile-menu ft-menu">
+          <li id="hero-menu" class="flex-grow-1 hero__nav-list hero__nav-list--mobile-menu ft-menu dropdown">
             <ul
               class="hero__menu-content nav flex-column flex-lg-row ft-menu__slider animated list-unstyled p-2 p-lg-0">
               <!-- YOU CAN UNCOMMENT THIS -->
@@ -47,13 +47,21 @@
                   </li>
                 -->
               <li class="hero-nav__item">
-                <a href="#services" class="hero-nav__link">Industry</a>
+                <a href="#services" class="hero-nav__link">Payment Processing Solutions</a>
+                <div class="dropdown-content">
+                  <a href="#">In-Person</a>
+                  <a href="#">E-Commerce</a>
+                  <a href="#">Mobile</a>
+                </div>
               </li>
               <li class="hero-nav__item">
                 <a href="#solutions" class="hero-nav__link">Products</a>
-              </li>
-              <li class="hero-nav__item">
-                <a href="#reviews" class="hero-nav__link">Guides</a>
+                <div class="dropdown-content">
+                  <a href="#">Terminals</a>
+                  <a href="#">Software</a>
+                  <a href="#">Gateways</a>
+                  <a href="#">Integrations</a>
+                </div>
               </li>
               <li class="hero-nav__item">
                 <a href="#projects" class="hero-nav__link">Blog</a>
@@ -98,7 +106,7 @@ Running a business is a lot of work. How you collect payments shouldn’t get in
         <div class="hero__btns-container">
           <a class="hero__btn btn btn-primary mb-2 mb-lg-0" href="#!">
             <span class="mx-1">
-              Request Information
+              Start Your Free Trial
             </span>
             <svg class="mx-1" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="currentColor"
               xmlns="http://www.w3.org/2000/svg">
@@ -118,6 +126,96 @@ Running a business is a lot of work. How you collect payments shouldn’t get in
       </div>
     </div>
   </header>
+
+  <!--2. Solutions ============================== -->
+  <div id="solutions" class="block-12 container space-between-blocks">
+    <!-- HEADER -->
+    <div class="block__header col-lg-8 col-xl-7 mx-auto text-center">
+      <p class="block__pre-title mb-2">PUT YOUR SUB HEADLINE HERE</p>
+      <h1 class="block__title mb-3">
+        For your very specific <span class="highlight">industry</span>
+      </h1>
+      <p class="block__paragraph mb-0">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s
+        standard
+      </p>
+    </div>
+    <div class="row px-2 align-items-center justify-content-center flex-column-reverse flex-lg-row">
+      <div class="col-lg-10 mx-auto">
+        <div class="row">
+          <div class="col-md-4 mb-2-1rem">
+            <div class="card-1 text-center">
+              <span class="card-1__symbol mx-auto mb-4">
+                <i class="fa fa-users" aria-hidden="true"></i>
+              </span>
+              <h3 class="card-1__title mb-2">In-Person</h3>
+              <p class="card-1__paragraph">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry’s standard
+                dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                a type specimen
+                book.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-2-1rem">
+            <div class="card-1 text-center">
+              <span class="card-1__symbol mx-auto mb-4">
+                <i class="fa fa-globe" aria-hidden="true"></i>
+              </span>
+              <h3 class="card-1__title mb-2">E-Commerce</h3>
+              <p class="card-1__paragraph">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry’s standard
+                dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                a type specimen
+                book.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-2-1rem">
+            <div class="card-1 text-center">
+              <span class="card-1__symbol mx-auto mb-4">
+                <i class="fa fa-mobile" aria-hidden="true"></i>
+              </span>
+              <h3 class="card-1__title mb-2">Mobile</h3>
+              <p class="card-1__paragraph">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry’s standard
+                dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                a type specimen
+                book.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--7. Call To Action ================================ -->
+  <div class="block-29 px-4 px-lg-0">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-7">
+          <h4 class="block-29__title mb-0">
+            60 Day Risk-Free Trial
+          </h4>
+            <p class="block__paragraphriskfree" style="font-weight: 0"> Let Acumen Connections review your current processing statements to show you how much you can save in processing fees, and if we can't beat your current rate, you get a <span style="font-weight: bold">$20 Visa gift card. </span></p>
+        </div>
+        <div
+          class="col-md-8 mx-auto col-lg-5 mt-4 mt-lg-0 d-flex flex-row-reverse align-items-center justify-content-center">
+          <div class="w-100">
+            <form onsubmit="submitForm(event)" class="cta-input w-100 mb-2">
+              <input type="email" class="cta-input__input flex-grow-1" placeholder="Email">
+              <button class="cta-input__btn btn-secondary">Get Started</button>
+            </form>
+            <p class="cta-p">We protect your data. Read our Privacy Policy.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!--2. Services ============================== -->
   <div id="services" class="block-12 container space-between-blocks">
@@ -211,96 +309,6 @@ We know that one size does not fit all. Our customers benefit from custom-design
     </div>
   </div>
 
-  <!--7. Call To Action ================================ -->
-  <div class="block-29 px-4 px-lg-0">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-7">
-          <h4 class="block-29__title mb-0">
-            60 Day Risk-Free Trial
-            <br>
-            <span style="font-size: 14px; line-height: 0"> Let Acumen Connections review your current processing statements to show you how much you can save in processing fees, and if we can't beat your current rate, you get a $20 Visa gift card. </span>
-          </h4>
-        </div>
-        <div
-          class="col-md-8 mx-auto col-lg-5 mt-4 mt-lg-0 d-flex flex-row-reverse align-items-center justify-content-center">
-          <div class="w-100">
-            <form onsubmit="submitForm(event)" class="cta-input w-100 mb-2">
-              <input type="email" class="cta-input__input flex-grow-1" placeholder="Email">
-              <button class="cta-input__btn btn-secondary">Get Started</button>
-            </form>
-            <p class="cta-p">We protect your data. Read our Privacy Policy.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!--4. Solutions ============================== -->
-  <div id="solutions" class="block-12 container space-between-blocks">
-    <!-- HEADER -->
-    <div class="block__header col-lg-8 col-xl-7 mx-auto text-center">
-      <p class="block__pre-title mb-2">PUT YOUR SUB HEADLINE HERE</p>
-      <h1 class="block__title mb-3">
-        For your very specific <span class="highlight">industry</span>
-      </h1>
-      <p class="block__paragraph mb-0">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s
-        standard
-      </p>
-    </div>
-    <div class="row px-2 align-items-center justify-content-center flex-column-reverse flex-lg-row">
-      <div class="col-lg-10 mx-auto">
-        <div class="row">
-          <div class="col-md-4 mb-2-1rem">
-            <div class="card-1 text-center">
-              <span class="card-1__symbol mx-auto mb-4">
-                <i class="fas fa-clone"></i>
-              </span>
-              <h3 class="card-1__title mb-2">In-Person</h3>
-              <p class="card-1__paragraph">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry’s standard
-                dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
-                a type specimen
-                book.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-4 mb-2-1rem">
-            <div class="card-1 text-center">
-              <span class="card-1__symbol mx-auto mb-4">
-                <i class="fas fa-fire"></i>
-              </span>
-              <h3 class="card-1__title mb-2">E-Commerce</h3>
-              <p class="card-1__paragraph">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry’s standard
-                dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
-                a type specimen
-                book.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-4 mb-2-1rem">
-            <div class="card-1 text-center">
-              <span class="card-1__symbol mx-auto mb-4">
-                <i class="fas fa-dice-d6"></i>
-              </span>
-              <h3 class="card-1__title mb-2">Mobile</h3>
-              <p class="card-1__paragraph">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry’s standard
-                dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
-                a type specimen
-                book.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!--5. Details ================================ -->
   <div class="block-10 position-relative space-between-blocks">
@@ -431,11 +439,23 @@ We know that one size does not fit all. Our customers benefit from custom-design
     </div>
   </div>
 
+  <!-- Our Partners -->
+
+<div class="block-24 space-between-blocks">
+<div class="container">
+  <div class="block__header col-lg-8 col-xl-7 mx-auto text-center px-0">
+    <h1 class="block__title mb-3">Our Partners</h1>
+    <p class="block__paragraph">Place logos of terminals below.</p>
+  </div>
+  <div class="logos"><img class="logos__img" src="https://i.postimg.cc/Z0tPXMy2/swipepartner.png"> <img class="logos__img" src="https://i.postimg.cc/2SNTtVQy/ingenicopartner.png"> <img class="logos__img" src="https://frontendor-files.netlify.app/images/brand3.png"> <img class="logos__img" src="https://frontendor-files.netlify.app/images/brand4.png"> <img class="logos__img" src="https://frontendor-files.netlify.app/images/brand5.png"></div>
+</div>
+</div>
+
   <!--6. Testimonials =================================== -->
-  <div id="reviews" class="block-19 space-between-blocks">
+  <div id="reviews" class="block-19 space-between-blockstestimonials">
     <div class="container">
       <div class="block__header col-lg-8 col-xl-7 mx-auto text-center px-0">
-        <h1 class="block__title mb-3">What Buyers Says About Us</h1>
+        <h1 class="block__title mb-3">What Our Customers Say</h1>
         <p class="block__paragraph">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard
         </p>
@@ -545,7 +565,7 @@ Acumen has been our processor for several years now and have been great to work 
           <div class="my-5">
             <a href="#!" class="btn btn-secondary px-4">
               <span class="mx-1">
-                Discover More
+                Read More
               </span>
               <svg class="mx-1" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right"
                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -571,7 +591,7 @@ Acumen has been our processor for several years now and have been great to work 
           <div class="my-5">
             <a href="#!" class="btn btn-secondary px-4">
               <span class="mx-1">
-                Discover More
+                Read More
               </span>
               <svg class="mx-1" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right"
                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -598,7 +618,7 @@ Acumen has been our processor for several years now and have been great to work 
           <div class="my-5">
             <a href="#!" class="btn btn-secondary px-4">
               <span class="mx-1">
-                Discover More
+                Read More
               </span>
               <svg class="mx-1" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right"
                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -726,25 +746,16 @@ You can expect to see your deposits within 2 business days after they are settle
         <div class="col-6 col-md-3 col-lg-2 mb-sm-4 mb-lg-0">
           <ul class="block-41__links-list list-unstyled p-0">
             <li class="block-41__li-heading">
-              Industry
+              Payment Processing Solutions
             </li>
             <li class="block-41__li">
-              <a href="#!" class="block-41__li-link">Retail</a>
-            </li>
-            <li class="block-41__li">
-              <a href="#!" class="block-41__li-link">Service</a>
-            </li>
-            <li class="block-41__li">
-              <a href="#!" class="block-41__li-link">Restaurant</a>
-            </li>
-            <li class="block-41__li">
-              <a href="#!" class="block-41__li-link">Membership</a>
+              <a href="#!" class="block-41__li-link">In-Person</a>
             </li>
             <li class="block-41__li">
               <a href="#!" class="block-41__li-link">E-Commerce</a>
             </li>
             <li class="block-41__li">
-              <a href="#!" class="block-41__li-link">Non-Profit</a>
+              <a href="#!" class="block-41__li-link">Mobile</a>
             </li>
           </ul>
         </div>
@@ -770,16 +781,17 @@ You can expect to see your deposits within 2 business days after they are settle
         <div class="col-6 col-md-3 col-lg-2 mb-sm-4 mb-lg-0">
           <ul class="block-41__links-list list-unstyled p-0">
             <li class="block-41__li-heading">
-              Guides
+              Blog
             </li>
             <li class="block-41__li">
-              <a href="#!" class="block-41__li-link">Lorem Ipsum</a>
+              <a href="#!" class="block-41__li-link">Merchant Highlights</a>
             </li>
-            <li class="block-41__li">
-              <a href="#!" class="block-41__li-link">Lorem Ipsum</a>
-            </li>
-            <li class="block-41__li">
-              <a href="#!" class="block-41__li-link">Lorem Ipsum</a>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2 mb-sm-4 mb-lg-0">
+          <ul class="block-41__links-list list-unstyled p-0">
+            <li class="block-41__li-heading">
+              Get In Touch
             </li>
           </ul>
         </div>
@@ -792,12 +804,22 @@ You can expect to see your deposits within 2 business days after they are settle
           <ul class="block-41__extra-links d-flex list-unstyled p-0">
             <li class="mx-2">
               <a href="#!" class="block-41__extra-link m-0">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+            <li class="mx-2">
+              <a href="#!" class="block-41__extra-link m-0">
                 <i class="fab fa-twitter"></i>
               </a>
             </li>
             <li class="mx-2">
               <a href="#!" class="block-41__extra-link m-0">
                 <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li class="mx-2">
+              <a href="#!" class="block-41__extra-link m-0">
+                <i class="fab fa-linkedin-in"></i>
               </a>
             </li>
             <li class="mx-2">

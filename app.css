@@ -6,7 +6,7 @@
 
   /* DEFAULT COLOR OF TEXTS */
   --text-primary: #0a1f44;
-  
+
   /* FOR BUTTONS & INPUTS */
   --elements-roundness: 10rem;
 
@@ -208,7 +208,7 @@ button:focus {
     font-size: 2.5rem;
     line-height: 1.17;
   }
-  
+
   .hero__paragraph {
     width: 80%;
   }
@@ -723,7 +723,7 @@ button:focus {
 @media(min-width: 992px) {
   .block-10__image-column {
     /*
-    if you go to the HTML code, you will 
+    if you go to the HTML code, you will
     find that this element has a class "container"
 
     "container" has "margin: auto" which make it centered
@@ -1332,4 +1332,112 @@ textarea.contact-form__input {
     width: auto;
     text-align: initial;
   }
+}
+
+.block-24 {
+  --block-background: white;
+  --block-text-color: var(--text-primary);
+  background: var(--block-background);
+  color: var(--block-text-color)
+}
+
+.block__header {
+  margin-bottom: 4rem
+}
+
+.block__pre-title {
+  color: var(--primary);
+  font-size: 1rem;
+  font-weight: 600
+}
+
+.block__title {
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1.4
+}
+
+@media(min-width:992px) {
+  .block__title {
+    font-size: 2.5rem
+  }
+}
+
+.block__paragraph {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  opacity: .9
+}
+
+.block__paragraphriskfree {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  opacity: .9;
+  width: 85%;
+  padding-top: 20px;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap
+}
+
+.logos__img {
+  max-width: 33%;
+  max-height: 150px;
+  padding: 0 1rem;
+  filter: grayscale(1);
+  opacity: .8;
+  transition: .2s all
+}
+
+@media(min-width:768px) {
+  .logos__img {
+    max-width: 30%
+  }
+}
+
+@media(min-width:992px) {
+  .logos__img {
+    max-width: 150px;
+    padding: 0;
+    margin: auto
+  }
+}
+
+.logos__img:focus,
+.logos__img:hover {
+  filter: grayscale(0);
+  opacity: 1
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 180px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-top: 10px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a:hover {
+  color: #0089ff;
 }
