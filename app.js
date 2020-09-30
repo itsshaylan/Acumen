@@ -8,12 +8,3 @@ function closeMenuAndGoTo(query) {
     })
   }, 250);
 }
-
-document.querySelector('#hero-menu').
-  querySelectorAll('[href]').
-  forEach(function (link) {
-    link.onclick = function (event) {
-      event.preventDefault()
-      closeMenuAndGoTo(link.getAttribute('href'))
-    }
-  })
