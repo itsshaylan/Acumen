@@ -32,6 +32,30 @@ body {
   }
 }
 
+.space-between-blockstwo {
+  padding-top: 0px;
+  padding-bottom: var(--space-between-blocks-small-screens);
+}
+
+@media(min-width: 992px) {
+  .space-between-blockstwo {
+    padding-top: 0px;
+    padding-bottom: var(--space-between-blocks);
+  }
+}
+
+.space-between-blocksthree {
+  padding-top: var(--space-between-blocks-small-screens);
+  padding-bottom: 20px;
+}
+
+@media(min-width: 992px) {
+  .space-between-blocksthree {
+    padding-top: var(--space-between-blocks);
+    padding-bottom: 20px;
+  }
+}
+
 /* ----------------- BUTTONS ------------------- */
 
 button {
@@ -79,6 +103,16 @@ button:focus {
   color: var(--primary-invert);
 }
 
+.btn-primaryschedule {
+  font-size: 15px;
+  width: 50%;
+  height: 60px;
+  line-height: 35px;
+  margin-left: 20px;
+  background: var(--primary);
+  color: var(--primary-invert);
+}
+
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {
@@ -104,7 +138,7 @@ button:focus {
 }
 
 .hero-nav {
-  height: var(--hero-nav-height);
+  height: 150px;
   display: flex;
   align-items: center;
 }
@@ -127,7 +161,8 @@ button:focus {
 }
 
 .hero-nav__logo {
-  height: 35px;
+  height: 55px;
+  padding-right: 20px;
 }
 
 .hero-nav__link {
@@ -468,6 +503,12 @@ button:focus {
 
 .block__title {
   font-size: 2rem;
+  font-weight: 900;
+  line-height: 1.4;
+}
+
+.block__titleintegration {
+  font-size: 1.3rem;
   font-weight: 900;
   line-height: 1.4;
 }

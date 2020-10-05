@@ -79,6 +79,16 @@ button:focus {
   color: var(--primary-invert);
 }
 
+.btn-primaryschedule {
+  font-size: 15px;
+  width: 50%;
+  height: 60px;
+  line-height: 35px;
+  margin-left: 20px;
+  background: var(--primary);
+  color: var(--primary-invert);
+}
+
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {
@@ -104,7 +114,7 @@ button:focus {
 }
 
 .hero-nav {
-  height: var(--hero-nav-height);
+  height: 150px;
   display: flex;
   align-items: center;
 }
@@ -127,7 +137,8 @@ button:focus {
 }
 
 .hero-nav__logo {
-  height: 35px;
+  height: 55px;
+  padding-right: 20px;
 }
 
 .hero-nav__link {
