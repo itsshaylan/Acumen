@@ -44,6 +44,18 @@ body {
   }
 }
 
+.space-between-blocksthree {
+  padding-top: var(--space-between-blocks-small-screens);
+  padding-bottom: 0px;
+}
+
+@media(min-width: 992px) {
+  .space-between-blocksthree {
+    padding-top: var(--space-between-blocks);
+    padding-bottom: 0px;
+  }
+}
+
 /* ----------------- BUTTONS ------------------- */
 
 button {
@@ -87,8 +99,17 @@ button:focus {
 .btn-primary,
 .btn-primary:hover,
 .btn-primary:focus {
-  background: var(--primary);
+  background: #003E52;
   color: var(--primary-invert);
+}
+
+.btn-risk {
+  background: #B4BD00;
+  color: var(--primary-invert);
+}
+
+.btn-risk:hover {
+  color: white;
 }
 
 .btn-primaryschedule {
@@ -97,8 +118,12 @@ button:focus {
   height: 60px;
   line-height: 35px;
   margin-left: 20px;
-  background: var(--primary);
+  background: #0a1f44;
   color: var(--primary-invert);
+}
+
+.btn-primaryschedule: hover {
+  color: white;
 }
 
 .btn-secondary,
@@ -149,7 +174,7 @@ button:focus {
 }
 
 .hero-nav__logo {
-  height: 55px;
+  height: 45px;
   padding-right: 20px;
 }
 
@@ -160,7 +185,7 @@ button:focus {
 
 .hero-nav__link:hover,
 .hero-nav__link:focus {
-  color: var(--primary);
+  color: #B4BD00;
   text-decoration: none;
   opacity: 1;
 }
@@ -287,7 +312,7 @@ button:focus {
 }
 
 .highlight {
-  color: var(--primary);
+  color: #B4BD00;
 }
 
 /* ----------------------------- */
@@ -1474,7 +1499,7 @@ textarea.contact-form__input {
 }
 
 .dropdown-content a:hover {
-  color: #0089ff;
+  color: #B4BD00;
 }
 
 /* Pricing Table  */

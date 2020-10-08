@@ -75,8 +75,16 @@ button:focus {
 .btn-primary,
 .btn-primary:hover,
 .btn-primary:focus {
-  background: var(--primary);
-  color: var(--primary-invert);
+  background: #003E52;
+}
+
+.btn-risk {
+  background: #B4BD00;
+  color: #FFFFFF;
+}
+
+.btn-risk:hover {
+  color: #FFFFFF;
 }
 
 .btn-primaryschedule {
@@ -85,8 +93,12 @@ button:focus {
   height: 60px;
   line-height: 35px;
   margin-left: 20px;
-  background: var(--primary);
-  color: var(--primary-invert);
+  background: #0a1f44;
+  color: #ffffff;
+}
+
+.btn-primaryschedule:hover {
+  color: white;
 }
 
 .btn-secondary,
@@ -137,7 +149,7 @@ button:focus {
 }
 
 .hero-nav__logo {
-  height: 55px;
+  height: 45px;
   padding-right: 20px;
 }
 
@@ -148,7 +160,7 @@ button:focus {
 
 .hero-nav__link:hover,
 .hero-nav__link:focus {
-  color: var(--primary);
+  color: #B4BD00;
   text-decoration: none;
   opacity: 1;
 }
@@ -275,7 +287,7 @@ button:focus {
 }
 
 .highlight {
-  color: var(--primary);
+  color: #B4BD00;
 }
 
 /* ----------------------------- */
@@ -1462,7 +1474,7 @@ textarea.contact-form__input {
 }
 
 .dropdown-content a:hover {
-  color: #0089ff;
+  color: #B4BD00;
 }
 
 /* Pricing Table  */
