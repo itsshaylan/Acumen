@@ -75,8 +75,7 @@ button:focus {
 .btn-primary,
 .btn-primary:hover,
 .btn-primary:focus {
-  background: var(--primary);
-  color: var(--primary-invert);
+  background: #003E52;
 }
 
 .btn-primaryschedule {
@@ -85,8 +84,21 @@ button:focus {
   height: 60px;
   line-height: 35px;
   margin-left: 20px;
-  background: var(--primary);
-  color: var(--primary-invert);
+  background: #0a1f44;
+  color: #FFFFFF;
+}
+
+.btn-primaryrates {
+  background: #B4BD00;
+  color: white;
+}
+
+.btn-primaryrates:hover {
+  color: white;
+}
+
+.btn-primaryschedule:hover {
+  color: white;
 }
 
 .btn-secondary,
@@ -137,7 +149,7 @@ button:focus {
 }
 
 .hero-nav__logo {
-  height: 55px;
+  height: 45px;
   padding-right: 20px;
 }
 
@@ -148,7 +160,7 @@ button:focus {
 
 .hero-nav__link:hover,
 .hero-nav__link:focus {
-  color: var(--primary);
+  color: #B4BD00;
   text-decoration: none;
   opacity: 1;
 }
@@ -275,7 +287,7 @@ button:focus {
 }
 
 .highlight {
-  color: var(--primary);
+  color: #B4BD00;
 }
 
 /* ----------------------------- */
@@ -506,8 +518,8 @@ button:focus {
 .card-1:hover,
 .card-1:focus {
   color: white;
-  background: var(--primary);
-  border-color: var(--primary);
+  background: #003E52;
+  border-color: #003E52;
 }
 
 .card-1__symbol {
@@ -517,10 +529,10 @@ button:focus {
   font-size: 1.5rem;
   height: 3.25rem;
   width: 3.25rem;
-  border: 1px solid var(--primary);
+  border: 1px solid #B4BD00;
   border-radius: var(--elements-roundness);
   background: white;
-  color: var(--primary);
+  color: #003E52
 }
 
 @media(min-width: 992px) {
@@ -760,7 +772,7 @@ button:focus {
 .block-10__pre-title {
   font-size: .85rem;
   font-weight: 600;
-  color: var(--primary);
+  color: #B4BD00;
 }
 
 .block-10__title {
@@ -864,7 +876,7 @@ button:focus {
   justify-content: center;
   width: 50px;
   height: 50px;
-  background: var(--primary);
+  background: #003E52;
   color: var(--primary-invert);
   font-size: 1.3rem;
   border-radius: 10rem;
@@ -904,7 +916,7 @@ button:focus {
 /* 7. Call To Action =================================== */
 .block-29 {
   --elements-roundness: 5px;
-  background: var(--primary);
+  background: linear-gradient(to right, #005D72, #003E52);
   color: var(--primary-invert);
   padding-top: 5.3rem;
   padding-bottom: 5.3rem;
@@ -965,13 +977,17 @@ button:focus {
   box-shadow: none;
 }
 
-.cta-input__btn {
-  width: 100%;
-  font-size: .87rem;
-  padding: .8rem 2.5rem;
-  color: var(--primary-invert);
-  background: var(--primary);
+.cta-input__btnlearn {
+  width: 50%;
+  font-size: 1.3rem;
+  padding: 1rem;
+  color: white;
+  background: #B4BD00;
   border-radius: var(--elements-roundness);
+}
+
+.cta-input__btnlearn:hover {
+  color: white;
 }
 
 @media(min-width: 768px) {
@@ -1366,7 +1382,7 @@ textarea.contact-form__input {
 }
 
 .block__pre-title {
-  color: var(--primary);
+  color: #003E52;
   font-size: 1rem;
   font-weight: 600
 }
@@ -1407,8 +1423,6 @@ textarea.contact-form__input {
   max-width: 33%;
   max-height: 150px;
   padding: 0 1rem;
-  opacity: .8;
-  transition: .2s all
 }
 
 @media(min-width:768px) {
@@ -1462,18 +1476,18 @@ textarea.contact-form__input {
 }
 
 .dropdown-content a:hover {
-  color: #0089ff;
+  color: #B4BD00;
 }
 
 /* Pricing Table  */
 
 .block-14 {
-  background-image: linear-gradient(to bottom, var(--primary) 30%, transparent 0)
+  background-image: (linear-gradient(to bottom, #003E52 30%, transparent 0))
 }
 
 @media(min-width:992px) {
   .block-14 {
-    background-image: linear-gradient(to bottom, var(--primary) 50%, transparent 0)
+    background-image: linear-gradient(#003E52, #026E87);
   }
 }
 
@@ -1530,7 +1544,6 @@ textarea.contact-form__input {
 
 .plan-card {
   padding: 4rem;
-  border: 2px solid var(--primary);
   background: #fff;
   border-radius: 5px;
   display: flex;
@@ -1628,7 +1641,6 @@ textarea.contact-form__input {
 
 .col-lg-4pricing {
   flex: 0 0 50%%!important;
-  max-width: 50%!important;
 }
 
 .block-18 {
@@ -1707,7 +1719,7 @@ textarea.contact-form__input {
 .cta-card__pre-title {
   font-size: .85rem;
   font-weight: 600;
-  color: var(--primary)
+  color: #B4BD00;
 }
 
 .cta-card__title {
@@ -1722,5 +1734,15 @@ textarea.contact-form__input {
   }
 }
 
-
-<style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style>
+.mapouter {
+  position:relative;
+  text-align:right;
+  height:auto;
+  width:100%;
+}
+.gmap_canvas {
+  overflow:hidden;
+  background:none!important;
+  height:500px;
+  width:100%;
+}
