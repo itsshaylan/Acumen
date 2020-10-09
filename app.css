@@ -1482,7 +1482,7 @@ textarea.contact-form__input {
 /* Pricing Table  */
 
 .block-14 {
-  background-image: (linear-gradient(to bottom, #003E52 30%, transparent 0))
+  background-image: linear-gradient(#003E52, #026E87);
 }
 
 @media(min-width:992px) {
